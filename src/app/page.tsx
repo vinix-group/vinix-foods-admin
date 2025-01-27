@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 
 const Home = () => {
   const router = useRouter()
-  const { user } = useUser();
+  const { user = null } = useUser();
 
   return (
     <div className="flex-col content-center h-screen">
